@@ -1,0 +1,18 @@
+<section class="bg-gray-50 py-10 md:py-20">
+  <div class=" flex flex-col md:grid md:grid-cols-3 gap-4 justify-center items-center  md:max-w-screen-xl md:m-auto px-5">
+    <div class=" w-[350px] md:w-[400px] md:h-[250px] flex flex-col justify-center space-y-6 px-10 py-5">
+      <h2 class="text-3xl md:text-4xl md:w-48 ">Outils essentiels</h2>
+      <p class="text-sm md:w-64 ">Des fonctionnalités conçues pour
+        améliorer votre efficacité et simplifier
+        votre quotidien. Profitez d’un espace de
+        travail optimisé pour mieux organiser
+        vos tâches et collaborer sans effort.</p>
+    </div>
+    <div *ngFor="let card of cards" class="card-tools flex flex-col justify-center group ">
+      <p class="text-5xl font-bold text-principale group-hover:text-white ">{{card.number}}</p>
+      <h2 class="title-card">{{card.title}}</h2>
+      <p class="text-texte group-hover:text-white ">{{card.description}}
+      </p>
+    </div>
+  </div>
+</section>
